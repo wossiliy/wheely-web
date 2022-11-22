@@ -2,6 +2,7 @@
   "name": "project1",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://wossiliy.github.io/wheelyweb",
   "dependencies": {
     "@coreui/react": "^4.4.0",
     "@emailjs/browser": "^3.9.1",
@@ -22,6 +23,8 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
